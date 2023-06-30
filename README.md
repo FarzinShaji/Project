@@ -1,0 +1,20 @@
+Objective
+
+
+To analyze the data of employees at a company and construct a machine learning model to predict whether they will be promoted or not.
+
+Introduction
+
+The Human Resources department of a company serves as the link between an organization's management and its employees. They perform human resource management, overseeing various aspects of employment, such as compliance with labor law and employment standards, interviewing and selection, performance management, administration of employee benefits, organizing employee files with the required documents for future reference, and some aspects of recruitment and employee offboarding. One of their major responsibilities is to set promotion policies and select the employees eligible for promotion.
+Employee job promotion refers to the upward movement of employees within the company for a new or higher job role, tasks, and responsibilities. It is the duty of the HR department to set the promotion policy and ensure that it is enforced in an unbiased manner. Although few organizations transparently communicate their promotion policies to their employees, a well-prepared and communicated policy can promote an environment of trust between the employees and their company.
+As a part of ensuring this transparency and fairness, it is important for a company and their human resources department to keep a database of their previous promotions and analyze that data to check whether there are any patterns or biases in promotions. This can help them ensure that the process is fair, and it can also help the employees get an idea of how to improve themselves and their chances of promotion.
+In this project, we are analyzing the promotion data of a company to check the factors important for the promotion of an employee. The dataset contains details of 54808 employees of a company and 13 features per employee, namely: Employee ID, Department, Region, Education, Gender, Recruitment Channel, Number of Trainings, Age, Previous Year Rating, Length of Service, Awards Won, Average Training Score, and Promotion Status. Our aim is to train a Machine learning model on the data that can predict whether an employee with the given qualifications will be promoted or not.
+
+
+Conclusion
+
+Promotions have a favorable, significant, and beneficial impact on employee work performance in the human resources process. In this study, a prediction model for employee promotion is proposed using the XGBoost method (Extreme Gradient Boosting).
+The objective of this project was to create a predictive model to identify employees who are likely to be promoted within an organization. The dataset used for the analysis consisted of various features related to employees' demographics, performance, and training. The top 35 features with the highest ANOVA scores were first selected using feature selection using ANOVA. The features that were chosen included, among others, previous-year ratings, average training scores, and awards received. This feature selection process helped us focus on the most relevant attributes for predicting employee promotions.
+We then experimented with various sampling strategies to address the dataset's class imbalance problem. To balance the distribution of the target variable, we used random over-sampling, random under-sampling, and SMOTE (Synthetic Minority Over-sampling Technique). We trained an XGBoost classifier on each of these balanced datasets and evaluated the performance using accuracy, precision, recall, and F1-score metrics.
+Furthermore, we conducted hyperparameter tuning for different classifiers, including MLPClassifier, ExtraTreesClassifier, BaggingClassifier, and XGBClassifier, using RandomizedSearchCV. This allowed us to find the optimal combination of hyperparameters for each model, leading to improved performance.
+Finally, we hosted the project on PythonAnywhere, making it accessible for deployment and usage by others. This model can help businesses find potential promotion candidates, enhance their talent management plans, and encourage employee advancement within the business.
